@@ -2,6 +2,9 @@ name: Run Renovate on Release Branches
 
 on:
   workflow_dispatch: {}
+  push:
+    branches:
+    - feature/renovatebot
 
 jobs:
   renovate:
